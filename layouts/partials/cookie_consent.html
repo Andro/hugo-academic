@@ -22,8 +22,8 @@
       "theme": "classic",
       "content": {
         "message": {{ i18n "cookie_message" | default "This website uses cookies to ensure you get the best experience on our website." }},
-        "dismiss": {{ i18n "cookie_dismiss" | default "Got it!" }},
-        "link": {{ i18n "cookie_learn" | default "Learn more" }},
+        "dismiss": {{ i18n "cookie_dismiss" | default "Okay." }},
+        "link": {{ i18n "cookie_learn" | default "" }},
         "href": {{ with site.GetPage "privacy.md" }}{{ printf "%s" .RelPermalink }}{{ else }}"https://www.cookiesandyou.com"{{ end }}
       }
     })});
